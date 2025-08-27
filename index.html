@@ -15,7 +15,7 @@
     <div class="container nav">
       <a class="logo" href="#home">
         <img src="assets/logo.svg" alt="Logo" width="28" height="28">
-        <span>Wow Studio</span>
+        <span>Wow Reels</span>
       </a>
       <nav class="menu">
         <a href="#services">Services</a>
@@ -195,7 +195,7 @@
 
     <div class="works-grid">
       <div class="work-card" data-category="instagram">
-        <img src="https://via.placeholder.com/300x160" alt="Dance Reel">
+        <video controls src="assets/3.mp4" width="100%"alt="Dance Reel">
         <div class="content">
           <h3>Dance Reel</h3>
           <p>Instagram Reels</p>
@@ -203,7 +203,7 @@
       </div>
 
       <div class="work-card" data-category="wedding">
-        <img src="https://via.placeholder.com/300x160" alt="Wedding Highlights">
+        <video controls src="assets/3.mp4" width="100%"alt="Dance Reel">
         <div class="content">
           <h3>Wedding Highlights</h3>
           <p>Wedding Reels</p>
@@ -211,7 +211,7 @@
       </div>
 
       <div class="work-card" data-category="invitation">
-        <img src="https://via.placeholder.com/300x160" alt="Wedding Invite Video">
+       <video controls src="assets/3.mp4" width="100%"alt="Dance Reel">
         <div class="content">
           <h3>Wedding Invite Video</h3>
           <p>Invitation</p>
@@ -219,12 +219,20 @@
       </div>
 
       <div class="work-card" data-category="brand">
-        <img src="https://via.placeholder.com/300x160" alt="Brand Promo Reel">
+       <video controls src="assets/3.mp4" width="100%"alt="Dance Reel">
+        <div class="content">
+          <h3>Brand Promo Reel</h3>
+          <p>Brand</p>
+        </div>
+
+      <div class="work-card" data-category="brand">
+       <video controls src="assets/danish 2.mp4" width="100%"alt="Dance Reel">
         <div class="content">
           <h3>Brand Promo Reel</h3>
           <p>Brand</p>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -251,17 +259,6 @@
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section class="section">
-    <div class="container">
-      <h2 style="font-size:34px; font-weight:800; margin:0 0 6px">Clients Love Us</h2>
-      <div class="grid" style="grid-template-columns:repeat(1,1fr); gap:16px; margin-top:10px">
-        <div class="card"><strong>Client 1</strong><div class="small">“Reels were fire! Our reach doubled.”</div></div>
-        <div class="card"><strong>Client 2</strong><div class="small">“Wedding teaser made our family cry (happy tears).”</div></div>
-        <div class="card"><strong>Client 3</strong><div class="small">“Super fast delivery — nailed the trend!”</div></div>
-      </div>
-    </div>
-  </section>
 
   <!-- FAQ -->
   <section class="section alt" id="faq">
@@ -319,16 +316,7 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container" style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap">
-      <div>© <span id="year"></span> ReelCraft Studio. All rights reserved.</div>
-      <div style="display:flex; gap:16px">
-        <a href="#privacy" class="small">Privacy</a>
-        <a href="#terms" class="small">Terms</a>
-      </div>
-    </div>
-  </footer>
+
 
   <script src="script.js"></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
@@ -371,6 +359,47 @@
     </a>
   </div>
 
- 
+  <!-- Reviews Section -->
+ <section class="reviews">
+  <div class="container text-center">
+    <h2 class="h2">What Our Clients Say</h2>
+    <p class="lead">Real feedback from our happy customers</p>
+
+    <div class="reviews-grid">
+      <!-- Review 1 -->
+      <div class="review-card">
+        <p class="review-text">“Amazing experience! The team delivered my reel exactly how I imagined. Highly recommend!”</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <h4 class="reviewer">– Priya Sharma</h4>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="review-card">
+        <p class="review-text">“Professional, quick turnaround, and great quality editing. Will book again for sure.”</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <h4 class="reviewer">– Rohit Verma</h4>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="review-card">
+        <p class="review-text">“Loved the creativity in my wedding invitation video! Everyone praised it.”</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <h4 class="reviewer">– Neha & Arjun</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container" style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap">
+      <div>© <span id="year"></span> ReelCraft Studio. All rights reserved.</div>
+      <div style="display:flex; gap:16px">
+        <a href="#privacy" class="small">Privacy</a>
+        <a href="#terms" class="small">Terms</a>
+      </div>
+    </div>
+  </footer> 
+
 </body>
 </html>
