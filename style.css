@@ -190,4 +190,94 @@ body{
       .floating-icons a{width:46px; height:46px;}
     }
 
-    
+    @media (max-width: 768px) {
+  /* HERO */
+  .h1 {
+    font-size: 28px;
+  }
+  .lead {
+    font-size: 14px;
+  }
+  .hero {
+    padding: 50px 20px;
+  }
+  .gallery {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* NAV */
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+  .nav .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 8px;
+  }
+  .nav a {
+    margin: 0;
+  }
+
+  /* SERVICES & PRICING CARDS */
+  .pricing .grid-2 {
+    grid-template-columns: 1fr !important;
+  }
+  .card {
+    padding: 16px;
+  }
+  .price {
+    font-size: 28px;
+  }
+
+  /* WORKS GRID */
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* PROCESS */
+  .process .step {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* TESTIMONIALS */
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* CONTACT FORM */
+  .form-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+  }
+  .footer > div {
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .h1 {
+    font-size: 24px;
+  }
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .badge {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+  .work-card img {
+    height: 140px;
+  }
+}
