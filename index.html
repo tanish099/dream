@@ -46,25 +46,16 @@
         </div>
       </div>
       <div class="gallery">
-        <video width="100%" type="video/mp4" src="assets/danish 2.mp4" controls  style="border-radius:20px; box-shadow:0 4px 12px rgba(0,0,0,0.1);"  preload="metadata"
-        playsInline
+        <video width="100%" type="video/mp4" src="assets/danish 2.mp4" controls  style="border-radius:20px; box-shadow:0 4px 12px rgba(0,0,0,0.1);" poster="assets/dposter.jpg" preload="none",
         poster="assets/danish.png" >
-        <a href="https://www.instagram.com/reel/DNdy1q2T7lY/?utm_source=ig_web_copy_link&igsh=M2l1eDgxZDBic3B2" target="_blank" rel="noreferrer">
-          <img src="assets/preview1.svg" alt="Reel Preview 1">
-          <div class="meta"><span>Project #1</span><span>@yourhandle</span></div>
-        </a>
+      
         </video>
-        <video width="100%" type="video/mp4" src="assets/danish 2.mp4" controls  style="border-radius:20px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
-        <a href="https://www.instagram.com/reel/DNdy1q2T7lY/?utm_source=ig_web_copy_link&igsh=M2l1eDgxZDBic3B2" target="_blank" rel="noreferrer">
-          <img src="assets/preview1.svg" alt="Reel Preview 1">
-          <div class="meta"><span>Project #1</span><span>@yourhandle</span></div>
-        </a>
+        <video width="100%" type="video/mp4" src="assets/danish 2.mp4" controls  style="border-radius:20px; box-shadow:0 4px 12px rgba(0,0,0,0.1);" poster="assets/dposter.jpg" preload="none",
+        poster="assets/danish.png" >
+      
         </video>
          <video width="100%" type="video/mp4" src="assets/danish 2.mp4" controls  style="border-radius:20px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
-        <a href="https://www.instagram.com/reel/DNdy1q2T7lY/?utm_source=ig_web_copy_link&igsh=M2l1eDgxZDBic3B2" target="_blank" rel="noreferrer">
-          <img src="assets/preview1.svg" alt="Reel Preview 1">
-          <div class="meta"><span>Project #1</span><span>@yourhandle</span></div>
-        </a>
+        
         </video>
       </div>
     </div>
@@ -184,62 +175,69 @@
     </div>
   </section>
 
-<section class="section" id="work">
+
+<section class="section" id="works">
+  <div class="container">
     <h2>Our Works</h2>
 
+    <!-- Filter Buttons -->
     <div class="filter-buttons">
-      <button class="active" data-filter="all">All</button>
-      <button data-filter="instagram">Instagram Reels</button>
-      <button data-filter="wedding">Wedding Reels</button>
-      <button data-filter="invitation">Invitation</button>
-      <button data-filter="brand">Brand</button>
+      <button class="active" onclick="filterVideos('all', event)">All</button>
+      <button onclick="filterVideos('instagram', event)">Instagram Reels</button>
+      <button onclick="filterVideos('wedding', event)">Wedding Reels</button>
+      <button onclick="filterVideos('invitation', event)">Invitation</button>
+      <button onclick="filterVideos('brand', event)">Brand</button>
     </div>
 
+    <!-- Video Grid -->
     <div class="works-grid">
-      <div class="work-card" data-category="instagram">
-        <video controls src="assets/3.mp4" width="100%"alt="Dance Reel">
-        <div class="content">
-          <h3>Dance Reel</h3>
-          <p>Instagram Reels</p>
-        </div>
+      
+      <!-- Instagram Reel -->
+      <div class="work-card instagram">
+        <video poster="thumb1.jpg" preload="none" controls>
+          <source src="assets/danish 2.mp4" type="video/mp4">
+        </video>
       </div>
 
-      <div class="work-card" data-category="wedding">
-        <video controls src="assets/3.mp4" width="100%"alt="Dance Reel">
-        <div class="content">
-          <h3>Wedding Highlights</h3>
-          <p>Wedding Reels</p>
-        </div>
+      <!-- Wedding Reel -->
+      <div class="work-card wedding">
+        <video poster="assets/wedding.jpg" preload="none" controls>
+          <source src="assets/sonu.mp4" type="video/mp4">
+        </video>
       </div>
 
-      <div class="work-card" data-category="invitation">
-       <video controls src="assets/3.mp4" width="100%"alt="Dance Reel">
-        <div class="content">
-          <h3>Wedding Invite Video</h3>
-          <p>Invitation</p>
-        </div>
+      <!-- Wedding Reel -->
+      <div class="work-card wedding">
+        <video poster="assets/haldi.jpg" preload="none" controls>
+          <source src="assets/ashta.mp4" type="video/mp4">
+        </video>
       </div>
 
-      <div class="work-card" data-category="brand">
-       <video controls src="assets/3.mp4" width="100%"alt="Dance Reel">
-        <div class="content">
-          <h3>Brand Promo Reel</h3>
-          <p>Brand</p>
-        </div>
+      <!-- Invitation Reel -->
+      <div class="work-card invitation">
+        <video poster="assets/images.jpeg" preload="none" controls>
+          <source src="assets/Wedding Invitation Video I E-card I Couple Cartoon Face I Caricature Wedding Invite !! 4k - Vfx art (360p, h264).mp4" type="video/mp4">
+        </video>
+      </div>
 
-      <div class="work-card" data-category="brand">
-       <video controls src="assets/danish 2.mp4" width="100%"alt="Dance Reel">
-        <div class="content">
-          <h3>Brand Promo Reel</h3>
-          <p>Brand</p>
-        </div>
+      <!-- Brand Reel -->
+      <div class="work-card brand">
+        <video poster="thumb4.jpg" preload="none" controls>
+          <source src="assets/video 2.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Add More Videos -->
+      <div class="work-card instagram">
+        <video poster="thumb5.jpg" preload="none" controls>
+          <source src="assets/RAGHAV.mp4" type="video/mp4">
+        </video>
       </div>
 
     </div>
-  </section>
+  </div>
+</section>
 
-  
-  
   <!-- PROCESS -->
   <section class="section alt" id="process">
     <div class="container process">
@@ -320,32 +318,6 @@
 
 
 
-  <script src="script.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
-
-   <script>
-    const buttons = document.querySelectorAll(".filter-buttons button");
-    const cards = document.querySelectorAll(".work-card");
-
-    buttons.forEach(btn => {
-      btn.addEventListener("click", () => {
-        // remove active from all
-        buttons.forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-
-        const filter = btn.getAttribute("data-filter");
-
-        cards.forEach(card => {
-          if (filter === "all" || card.getAttribute("data-category") === filter) {
-            card.classList.remove("hidden");
-          } else {
-            card.classList.add("hidden");
-          }
-        });
-      });
-    });
-  </script>
-
  
 
 <!-- icons -->
@@ -402,6 +374,8 @@
       </div>
     </div>
   </footer> 
-
+  
+  <!-- JS File Link -->
+  <script src="script.js"> </script>
 </body>
 </html>
